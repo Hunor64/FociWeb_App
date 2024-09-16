@@ -16,12 +16,14 @@ namespace FociWeb_App.Pages
         }
         public void OnGet()
         {
-
+            meccsekListaja = _db.Meccsek.ToList();
         }
         public IActionResult OnPost() 
         {
             _db.Meccsek.Add(UjMeccs);
+            _db.SaveChanges();
             return Page();
+
         }
     }
 }
