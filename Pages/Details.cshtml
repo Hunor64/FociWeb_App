@@ -12,43 +12,43 @@
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Meccs.Fordulo)
+            Forduló
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Meccs.Fordulo)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Meccs.HazaiVeg)
+            Hazai Végeredmény
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Meccs.HazaiVeg)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Meccs.VendegVeg)
+            Vendég Végeredmény
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Meccs.VendegVeg)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Meccs.HazaiFel)
+            Hazai Félidő
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Meccs.HazaiFel)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Meccs.VendegFel)
+            Vendég Félidő
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Meccs.VendegFel)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Meccs.HazaiCsapat)
+            Hazai Csapat
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Meccs.HazaiCsapat)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Meccs.VendegCsapat)
+            Vendeg Csapat
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Meccs.VendegCsapat)
@@ -56,6 +56,6 @@
     </dl>
 </div>
 <div>
-    <a asp-page="./Edit" asp-route-id="@Model.Meccs.Id">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./AdatbazisSzerkesztes" asp-route-id="@Model.Meccs.Id">Szerkesztés</a> |
+    <a asp-page="./Index">Vissza a meccsekhez</a>
 </div>

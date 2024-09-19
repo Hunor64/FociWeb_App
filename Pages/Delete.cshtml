@@ -2,54 +2,54 @@
 @model FociWeb_App.Pages.DeleteModel
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Törlés";
 }
 
-<h1>Delete</h1>
+<h1>Törlés</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Biztos kitörlöd ezt a meccset?</h3>
 <div>
     <h4>Meccs</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Meccs.Fordulo)
+            Forduló
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Meccs.Fordulo)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Meccs.HazaiVeg)
+            Hazai Végeredmény
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Meccs.HazaiVeg)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Meccs.VendegVeg)
+            Vendég Végeredmény
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Meccs.VendegVeg)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Meccs.HazaiFel)
+            Hazai Félidő
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Meccs.HazaiFel)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Meccs.VendegFel)
+            Vendég Félidő
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Meccs.VendegFel)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Meccs.HazaiCsapat)
+            Hazai Csapat
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Meccs.HazaiCsapat)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Meccs.VendegCsapat)
+            Vendég Csapat
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Meccs.VendegCsapat)
@@ -58,7 +58,7 @@
     
     <form method="post">
         <input type="hidden" asp-for="Meccs.Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-page="./Index">Back to List</a>
+        <input type="submit" value="Törlés" class="btn btn-danger" /> |
+        <a asp-page="./Index">Mégse</a>
     </form>
 </div>

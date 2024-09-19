@@ -2,10 +2,10 @@
 @model FociWeb_App.Pages.AdatbazisSzerkesztesModel
 
 @{
-    ViewData["Title"] = "AdatbazisSzerkesztes";
+    ViewData["Title"] = "Adatbázis Szerkesztés";
 }
 
-<h1>AdatbazisSzerkesztes</h1>
+<h1>Adatbázis Szerkesztés</h1>
 
 <h4>Meccs</h4>
 <hr />
@@ -15,49 +15,49 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Meccs.Id" />
             <div class="form-group">
-                <label asp-for="Meccs.Fordulo" class="control-label"></label>
+                <label asp-for="Meccs.Fordulo" class="control-label">Forduló</label>
                 <input asp-for="Meccs.Fordulo" class="form-control" />
                 <span asp-validation-for="Meccs.Fordulo" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Meccs.HazaiVeg" class="control-label"></label>
+                <label asp-for="Meccs.HazaiVeg" class="control-label">Hazai Végeredmény</label>
                 <input asp-for="Meccs.HazaiVeg" class="form-control" />
                 <span asp-validation-for="Meccs.HazaiVeg" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Meccs.VendegVeg" class="control-label"></label>
+                <label asp-for="Meccs.VendegVeg" class="control-label">Vendég Végeredmény</label>
                 <input asp-for="Meccs.VendegVeg" class="form-control" />
                 <span asp-validation-for="Meccs.VendegVeg" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Meccs.HazaiFel" class="control-label"></label>
+                <label asp-for="Meccs.HazaiFel" class="control-label">Hazai Félidő</label>
                 <input asp-for="Meccs.HazaiFel" class="form-control" />
                 <span asp-validation-for="Meccs.HazaiFel" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Meccs.VendegFel" class="control-label"></label>
+                <label asp-for="Meccs.VendegFel" class="control-label">Vendég Félidő</label>
                 <input asp-for="Meccs.VendegFel" class="form-control" />
                 <span asp-validation-for="Meccs.VendegFel" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Meccs.HazaiCsapat" class="control-label"></label>
+                <label asp-for="Meccs.HazaiCsapat" class="control-label">Hazai Csapat</label>
                 <input asp-for="Meccs.HazaiCsapat" class="form-control" />
                 <span asp-validation-for="Meccs.HazaiCsapat" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Meccs.VendegCsapat" class="control-label"></label>
+                <label asp-for="Meccs.VendegCsapat" class="control-label">Vendég Csapat</label>
                 <input asp-for="Meccs.VendegCsapat" class="form-control" />
                 <span asp-validation-for="Meccs.VendegCsapat" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Mentés" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Index">Vissza a meccsekhez</a>
 </div>
 
 @section Scripts {
