@@ -1,0 +1,56 @@
+﻿@page
+@using FociWeb_App.Models
+@model FociWeb_App.Pages.TabellaModel
+
+@{
+    ViewData["Title"] = "Tabella";
+}
+@{
+    List<Allas> allas = new();
+    List<string> csapatok = new();
+    foreach (var meccs in Model.Meccs)
+    {
+        csapatok.Add(meccs.HazaiCsapat);
+        csapatok.Add(meccs.VendegCsapat);
+    }
+    csapatok = csapatok.Distinct().ToList();
+    /*foreach (var csapat in csapatok)
+    {
+        allas.Add(new Allas(csapat,Model.Meccs.Where(x => x.HazaiCsapat == csapat));
+    }*/
+}
+
+<h1>Tabella</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Állás
+            </th>
+            <th>
+                Csapat
+            </th>
+            <th>
+                Győzelmek
+            </th>
+            <th>
+                Döntetlenek
+            </th>
+            <th>
+                Vereségek
+            </th>
+            <th>
+                Lőtt gólok
+            </th>
+            <th>
+                Kapott gólok
+            </th>
+            <th>
+                Pontok
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
