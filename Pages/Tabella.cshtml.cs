@@ -12,6 +12,7 @@ namespace FociWeb_App.Pages
     public class TabellaModel : PageModel
     {
         List<Allas> allasTabella;
+
         private readonly FociWeb_App.Models.FociDbContext _context;
 
         public TabellaModel(FociWeb_App.Models.FociDbContext context)
